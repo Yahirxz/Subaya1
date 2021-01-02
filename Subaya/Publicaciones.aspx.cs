@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Subaya
 {
-    public partial class SiteMaster : MasterPage
+    public partial class Publicaciones : System.Web.UI.Page
     {
-        public string nombre; 
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
-           
         }
     }
 }

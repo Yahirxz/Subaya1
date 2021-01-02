@@ -486,7 +486,7 @@ th {
 }
 .glyphicon-tint:before {
   content: "\e064";
-}
+}.navbar-inverse
 .glyphicon-edit:before {
   content: "\e065";
 }
@@ -1290,10 +1290,12 @@ p {
   margin: 0 0 10px;
 }
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #ff867c; 
+
 }
 @media (min-width: 768px) {
   .lead {
@@ -2047,9 +2049,11 @@ pre code {
   .col-md-5 {
     width: 41.66666667%;
   }
-  .col-md-4 {
-    width: 33.33333333%;
-  }
+    .col-md-4 {
+        width: 33.33333333%;
+        border-color: #ef5350; 
+
+    }
   .col-md-3 {
     width: 25%;
   }
@@ -4278,6 +4282,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
+   
     overflow: visible !important;
   }
   .navbar-collapse.in {
@@ -4665,8 +4670,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+    background-color: #b61827;
+    border-color: #b61827;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4677,7 +4682,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #9d9d9d;
@@ -5032,11 +5037,12 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    border-color: #ff867c;
+    background-image: url("./Imagenes/contactos.jpg");
 }
 .jumbotron h1,
 .jumbotron .h1 {
