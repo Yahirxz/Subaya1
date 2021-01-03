@@ -11,6 +11,8 @@ namespace Subaya
     {
 
         string nombre = "";
+        string id = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,6 +21,7 @@ namespace Subaya
             if (!IsPostBack)
             {
                 nombre = Request.QueryString["usuario"];
+                id = Request.QueryString["id"]; 
 
 
 

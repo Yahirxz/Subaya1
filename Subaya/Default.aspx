@@ -1,15 +1,20 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Subaya._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="jumbotron">
-        <p class="lead"> Encuentra artesanias sin salir de casa
-           
-            <asp:Button ID="boton" runat="server" Text="Iniciar Sesion" OnClick="boton_Click" />
-
-        </p>
-
-        <img src="./Imagenes/principio/contactos.jpg"/>
+    <link rel="stylesheet" href="./Content/estilos.css">
+    <div>
+        <p>&nbsp<p/>
+       <div>  <div class="usuario-box"><asp:Button ID="boton" runat="server" Text="Iniciar Sesion" OnClick="boton_Click" /> </div> <div class="buscador-box"> <asp:TextBox ID="Buscador" runat="server"/><asp:Button ID="Button1" runat="server" Text="Buscar" /></div></div>
+             
+    </div>
+    <p>&nbsp<p/>
+    <div class="slider">
+    <ul>
+        <li><img src="./Imagenes/principio/1.jpg"/></li>
+        <li><img src="./Imagenes/principio/2.jpg"/></li>
+        <li><img src="./Imagenes/principio/3.jpg"/></li>
+        <li><img src="./Imagenes/principio/4.jpg"/></li>
+    </ul>
     </div>
 
     <div class="row">

@@ -55,7 +55,7 @@ namespace Subaya
                 data.Fill(ds, "Login");
 
 
-                Response.Redirect("Default.aspx?usuario=" + ds.Tables[0].Rows[0].ItemArray[0].ToString()); 
+                Response.Redirect("Default.aspx?id=" + ds.Tables[0].Rows[0].ItemArray[0].ToString() +"&usuario="+Usuario.Text); 
                
 
 

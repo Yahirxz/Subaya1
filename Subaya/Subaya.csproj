@@ -113,6 +113,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\estilos.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -126,10 +127,17 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="Imagenes\principio\contactos.jpg" />
+    <Content Include="Imagenes\principio\1.jpg" />
+    <Content Include="Imagenes\principio\2.jpg" />
+    <Content Include="Imagenes\principio\3.jpg" />
+    <Content Include="Imagenes\principio\4.jpg" />
+    <Content Include="Imagenes\principio\5.jpg" />
     <Content Include="Imagenes\principio\guaya.png" />
+    <Content Include="Imagenes\principio\lupa.png" />
     <Content Include="Imagenes\principio\madera.jpg" />
+    <Content Include="Imagenes\principio\fondo.jpg" />
     <Content Include="Imagenes\principio\metal.png" />
+    <Content Include="Imagenes\principio\user.PNG" />
     <Content Include="Login.aspx" />
     <Content Include="Publicaciones.aspx" />
     <Content Include="Scripts\bootstrap.js" />
