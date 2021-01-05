@@ -15,7 +15,7 @@ namespace Subaya
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
 
 
             if (!IsPostBack)
@@ -55,7 +55,10 @@ namespace Subaya
 
             if(Session["usuario"] != null)
 
-            { Response.Redirect("Usuario.aspx"); 
+            {
+                nombre = Request.QueryString["usuario"];
+                id = Request.QueryString["id"];
+                Response.Redirect("Usuario.aspx?id=" + id + "&usuario=" + nombre); 
             
             }
 

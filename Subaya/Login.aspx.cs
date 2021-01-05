@@ -33,18 +33,12 @@ namespace Subaya
         protected void Entrar_Click(object sender, EventArgs e)
         {
 
+           
 
             cmd.CommandText = "select* from Login where Usuario = '" + Usuario.Text + "' and Contrasena = '"+Contra.Text+"'";
             cmd.Connection = cnx;
             data.SelectCommand = cmd;
             data.Fill(ds, "Login");
-
-           
-
-
-
-
-
 
 
             if (ds.Tables[0].Rows.Count > 0)
