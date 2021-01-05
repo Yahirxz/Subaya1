@@ -13,33 +13,19 @@ namespace Subaya
         string nombre = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
-
             if (!IsPostBack)
             {
                 nombre = Request.QueryString["usuario"];
-
-
-
-
                 if (nombre == null)
                 {
-
                     boton.Text = "Iniciar sesion";
-
                 }
-
                 else
                 {
-
                     Session["usuario"] = nombre;
-
                     boton.Text = ((string)Session["usuario"]);
-
                 }
             }
-
         }
 
         protected void boton_Click(object sender, EventArgs e)
