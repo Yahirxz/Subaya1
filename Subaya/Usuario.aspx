@@ -21,7 +21,7 @@
             <br />
             <br />
             <div class="row">
-               <div class="col-12">
+               <div class="col-md-12">
                    <p style="margin:0px">Publicaciones</p> <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="/Imagenes/principio/publicaciones.jpeg" OnClick="ImageButton4_Click" Width="100%" />
                </div>
             </div>

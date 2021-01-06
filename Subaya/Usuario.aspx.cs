@@ -30,17 +30,31 @@ namespace Subaya
         {
             SqlConnection cnx = new SqlConnection();
             DataSet ds = new DataSet();
-            cnx.ConnectionString = "Data source = LAPTOP-9HTNGOSP; initial catalog= Subaya ; integrated Security=true";
-            cnx.Open();
-            SqlDataAdapter nombre = new SqlDataAdapter("SELECT Usuario FROM Login WHERE ID = " + usuarioID, cnx);
-            nombre.Fill(ds, "Login");
-            cnx.Close();
-            return ds.Tables[0].Rows[0].ItemArray[0].ToString();
+            try
+            {
+                cnx.ConnectionString = "Data source = LAPTOP-9HTNGOSP; initial catalog= Subaya ; integrated Security=true";
+                cnx.Open();
+                SqlDataAdapter nombre = new SqlDataAdapter("SELECT * FROM Usuarios WHERE IdUsu = " + usuarioID, cnx);
+                nombre.Fill(ds, "Usuarios");
+                Session["correo"] = ds.Tables[0].Rows[0].ItemArray[1].ToString();
+                Session["nombre"] = ds.Tables[0].Rows[0].ItemArray[3].ToString();
+                Session["apellido"] = ds.Tables[0].Rows[0].ItemArray[4].ToString();
+                Session["edad"] = ds.Tables[0].Rows[0].ItemArray[5].ToString();
+                Session["nombreTienda"] = ds.Tables[0].Rows[0].ItemArray[6].ToString();
+            }catch(SqlException ex)
+            {
+                Console.WriteLine("Ha ocurrido un error" + ex);
+            }
+            finally
+            {
+                cnx.Close();
+            }
+            return ds.Tables[0].Rows[0].ItemArray[2].ToString();
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Perfil.aspx");
+            Response.Redirect("DatosPersonales.aspx");
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

@@ -108,11 +108,14 @@
     <Content Include="About.aspx" />
     <Content Include="Busqueda.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Contactos.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DatosPersonales.aspx" />
+    <Content Include="DatosTienda.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -126,10 +129,12 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Imagenes\principio\guest.png" />
     <Content Include="Imagenes\principio\contactos.jpg" />
     <Content Include="Imagenes\principio\guaya.png" />
     <Content Include="Imagenes\principio\madera.jpg" />
     <Content Include="Imagenes\principio\metal.png" />
+    <Content Include="Imagenes\principio\tienda.png" />
     <Content Include="Login.aspx" />
     <Content Include="Publicaciones.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -190,6 +195,27 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactos.aspx.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactos.aspx.designer.cs">
+      <DependentUpon>Contactos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosPersonales.aspx.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPersonales.aspx.designer.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosTienda.aspx.cs">
+      <DependentUpon>DatosTienda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosTienda.aspx.designer.cs">
+      <DependentUpon>DatosTienda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
