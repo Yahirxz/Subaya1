@@ -62,6 +62,9 @@ namespace Subaya
 
         }
 
-        
+        protected void Regisatarse_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registrarse.aspx");
+        }
     }
 }

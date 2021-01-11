@@ -115,6 +115,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\estilos.css" />
+    <Content Include="DatosPersonales.aspx" />
+    <Content Include="DatosTienda.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -132,6 +134,8 @@
     <Content Include="Imagenes\principio\2.jpg" />
     <Content Include="Imagenes\principio\3.jpg" />
     <Content Include="Imagenes\principio\cal.png" />
+    <Content Include="Imagenes\principio\guest.png" />
+    <Content Include="Imagenes\principio\nuevo.jpg" />
     <Content Include="Imagenes\principio\publicaciones.jpg" />
     <Content Include="Imagenes\principio\4.jpg" />
     <Content Include="Imagenes\principio\5.jpg" />
@@ -143,9 +147,11 @@
     <Content Include="Imagenes\principio\madera.jpg" />
     <Content Include="Imagenes\principio\fondo.jpg" />
     <Content Include="Imagenes\principio\metal.png" />
+    <Content Include="Imagenes\principio\tienda.png" />
     <Content Include="Imagenes\principio\user.PNG" />
     <Content Include="Login.aspx" />
     <Content Include="Publicaciones.aspx" />
+    <Content Include="Registrarse.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -212,6 +218,20 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DatosPersonales.aspx.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosPersonales.aspx.designer.cs">
+      <DependentUpon>DatosPersonales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DatosTienda.aspx.cs">
+      <DependentUpon>DatosTienda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DatosTienda.aspx.designer.cs">
+      <DependentUpon>DatosTienda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -236,6 +256,13 @@
     </Compile>
     <Compile Include="Publicaciones.aspx.designer.cs">
       <DependentUpon>Publicaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -13,6 +13,7 @@ namespace Subaya
     public partial class AgregarPublicacion : System.Web.UI.Page
     {
         string id = "";
+        
         SqlCommand cmd = new SqlCommand();
         SqlConnection cnx = new SqlConnection();
         SqlDataAdapter data = new SqlDataAdapter();
@@ -20,6 +21,8 @@ namespace Subaya
         protected void Page_Load(object sender, EventArgs e)
         {
             id = Request.QueryString["id"];
+          
+
             cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
             verificarSesion(); 
 
@@ -64,6 +67,8 @@ namespace Subaya
                 cmd.Parameters.AddWithValue("@img", SqlDbType.Image).Value = imgOriginal;
 
                 cmd.ExecuteNonQuery();
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Publicacion guardada con exito');", true);
+
             }
 
 

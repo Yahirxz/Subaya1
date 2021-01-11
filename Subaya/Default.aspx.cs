@@ -12,7 +12,7 @@ namespace Subaya
 
         string nombre = "";
         string id = "";
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -64,6 +64,9 @@ namespace Subaya
 
         }
 
-       
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Busqueda.aspx?Buscar=" + Buscador.Text);
+        }
     }
 }

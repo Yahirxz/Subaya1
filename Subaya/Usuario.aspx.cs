@@ -50,7 +50,7 @@ namespace Subaya
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Perfil.aspx");
+            Response.Redirect("DatosPersonales.aspx");
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
@@ -60,7 +60,7 @@ namespace Subaya
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Contactos.aspx?id=" + id);
+            Response.Redirect("Contact.aspx?id=" + id);
         }
 
         protected void ImageButton4_Click(object sender, ImageClickEventArgs e)

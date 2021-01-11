@@ -38,6 +38,7 @@ namespace Subaya
             cmd.CommandText = "select * from Publicaciones where idUsuario = '" + 1 +"'";
             cmd.Connection = cnx;
             data.SelectCommand = cmd;
+
             data.Fill(ds, "Publicaciones");
             num = ds.Tables[0].Rows.Count;
 

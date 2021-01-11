@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./Content/estilos.css">
     <div>
         <p>&nbsp<p/>
-       <div>  <div class="usuario-box"><asp:Button ID="boton" runat="server" Text="Iniciar Sesion" OnClick="boton_Click" /> </div> <div class="buscador-box"> <asp:TextBox ID="Buscador" runat="server"/><asp:Button ID="Button1" runat="server" Text="Buscar" /></div></div>
+       <div>  <div class="usuario-box"><asp:Button ID="boton" runat="server" Text="Iniciar Sesion" OnClick="boton_Click" /> </div> <div class="buscador-box"> <asp:TextBox ID="Buscador" runat="server"/><asp:Button ID="Button1" runat="server" Text="Buscar" OnClick="Button1_Click" /></div></div>
              
     </div>
     <p>&nbsp<p/>

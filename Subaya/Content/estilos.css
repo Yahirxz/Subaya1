@@ -117,7 +117,7 @@
     top: 13%;
     left: 100%;
     color:white;
-    width: 110px;
+    width: 120px;
     height: 40px;
    
     background: #ab000d;
@@ -249,4 +249,250 @@ agregar-box {
     height: 40px;
     color: #fff;
     font-size: 16px;
+}
+
+
+
+/*Registro*/
+
+
+.registro-box {
+    width: 320px;
+    height: 750px;
+    background: #ff6f60;
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+    .registro-box img {
+        width: 105px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+
+    .registro-box h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .registro-box label {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        display: block;
+    }
+
+    .registro-box input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+        .registro-box input[type="text"], .login-box input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .registro-box input[type="submit"], .registro-box input[type="password"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #b80f22;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+    .registro-box input[type="submit"]:hover {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+    }
+
+    .registro-box a {
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: darkgrey;
+    }
+
+        .registro-box a:hover {
+            color: #fff;
+        }
+
+
+        /*Publicaciones*/
+
+.publicacion-box {
+    width: 1240px;
+    height: 190px;
+    background: #ff6f60;
+    color: #fff;
+    position: inherit;
+    
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 3%;
+    border-style: dotted;
+}
+
+    .publicacion-box img {
+        position: relative;
+        top: -70px;
+        left: calc(90% - 51px);
+        width: 13%;
+        height: 90%;
+        border-radius: 50%;
+    }
+
+.publicacion-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+/*Busqueda*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+table {
+    background: #012B39;
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+th {
+    border-bottom: 1px solid #364043;
+    color: #E2B842;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+td {
+    color: #fff;
+    font-weight: 400;
+    padding: 0.65em 1em;
+}
+
+.disabled td {
+    color: #4F5F64;
+}
+
+tbody tr {
+    transition: background 0.25s ease;
+}
+
+    tbody tr:hover {
+        background: #014055;
+    }
+
+
+    /*Busqueda*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+}
+
+
+.item {
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.095);
+    transition: all 300ms;
+    position: relative;
+}
+
+
+    .item::after {
+        content: "";
+        background-color: rgba(179, 229, 252, .1);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: all 300ms;
+        opacity: 0;
+    }
+
+    .item:hover:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+.item-text {
+    padding: 1em;
+}
+
+
+.item-img {
+    max-width: 100%;
+    display: block;
+}
+
+
+@media screen and (min-width: 590px) {
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (min-width: 960px) {
+
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
