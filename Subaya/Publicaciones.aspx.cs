@@ -32,9 +32,10 @@ namespace Subaya
         {
 
             id = Request.QueryString["id"];
-            verificarSesion(); 
+            verificarSesion();
 
-            cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            //cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            cnx.ConnectionString = "Data source = DESKTOP-RORGF8I; initial catalog= Subaya ; integrated Security=true";
             cmd.CommandText = "select * from Publicaciones where idUsuario = '" + 1 +"'";
             cmd.Connection = cnx;
             data.SelectCommand = cmd;

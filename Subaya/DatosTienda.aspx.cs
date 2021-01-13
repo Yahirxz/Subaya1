@@ -18,7 +18,9 @@ namespace Subaya
             DataSet ds = new DataSet();
             try
             {
-                cnx.ConnectionString = "Data source = LAPTOP-9HTNGOSP; initial catalog= Subaya ; integrated Security=true";
+                //cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+                cnx.ConnectionString = "Data source = DESKTOP-RORGF8I; initial catalog= Subaya ; integrated Security=true";
+
                 cnx.Open();
                 SqlDataAdapter nombre = new SqlDataAdapter("SELECT * FROM Tiendas WHERE idTienda = ", cnx);
                 nombre.Fill(ds, "Tiendas");

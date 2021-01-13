@@ -10,8 +10,8 @@
 
                for (int i = 0 ; i < num; i++)
                {
-                   Response.Write("<div class = 'item'><div class='item'><img src='data:image/jpg;base64,"+img[i]+"' class='item-img''><div class='item-text'><h3>"+nombre[i]
-                   +"</h3><p>"+carac[i]+"</p><p>"+desc[i]+"</p></div><p>&nbsp</p></div></div>");
+                   Response.Write("<div class = 'item' '><div class='item' ><img src='data:image/jpg;base64,"+img[i]+"' class='item-img''><div class='item-text'><h3> <a runat='server' href='~/About' />"+nombre[i]
+                   +"</a></h3><p>"+carac[i]+"</p><p>"+desc[i]+"</p><p>Tienda: </p><h3>"+tienda[i]+"</h3><p>Contacto: </p><p><strong>Telefono:</strong> "+tel[i]+"</p><p><strong>Correo:</strong> "+correo[i]+"</p></div><p>&nbsp</p></div></div>");
            }
 
         %>

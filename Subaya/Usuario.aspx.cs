@@ -39,7 +39,8 @@ namespace Subaya
             SqlConnection cnx = new SqlConnection();
             DataSet ds = new DataSet();
 
-            cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            //cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            cnx.ConnectionString = "Data source = DESKTOP-RORGF8I; initial catalog= Subaya ; integrated Security=true";
             cmd.CommandText = "select Usuario from Login where ID = '" + id + "'";
             cmd.Connection = cnx;
             data.SelectCommand = cmd;
@@ -50,12 +51,12 @@ namespace Subaya
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("DatosPersonales.aspx");
+            Response.Redirect("DatosPersonales.aspx?id="+id);
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("DatosTienda.aspx");
+            Response.Redirect("DatosTienda.aspx?id="+id);
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)

@@ -21,8 +21,9 @@ namespace Subaya
 
         protected void Page_Load(object sender, EventArgs e)
         {
-          
-            cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+
+            //cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            cnx.ConnectionString = "Data source = DESKTOP-RORGF8I; initial catalog= Subaya ; integrated Security=true";
             //Cambiar esto por los parametros de su computadora la mia es esta pero la de ustedes es la de sus computadoras en la ventana que les sale cuando inician sqlServer 2014
 
 

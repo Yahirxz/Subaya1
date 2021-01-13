@@ -21,9 +21,10 @@ namespace Subaya
         protected void Page_Load(object sender, EventArgs e)
         {
             id = Request.QueryString["id"];
-          
 
-            cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+
+            //cnx.ConnectionString = "Data source = DESKTOP-RB041FV; initial catalog= Subaya ; integrated Security=true";
+            cnx.ConnectionString = "Data source = DESKTOP-RORGF8I; initial catalog= Subaya ; integrated Security=true";
             verificarSesion(); 
 
 

@@ -3,8 +3,6 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <link rel="stylesheet" href="./Content/estilos.css">
     <div class="jumbotron">
-        <h3>usuario</h3>
-
 
         <h2>
             <asp:Label ID="lblNombre" runat="server"></asp:Label><br />
@@ -24,9 +22,9 @@
             </div>
             <br />
             <br />
-            <div class="row">
-               <div class="col-12"> 
-                   <p style="margin:0px">Publicaciones</p> <div class="imagen-baner"><asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="/Imagenes/principio/publicaciones.jpg" OnClick="ImageButton4_Click"  /></div>    
+            <div >
+               <div > 
+                   <p style="margin:0px">Publicaciones</p> <div class="imagen-baner"><asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="/Imagenes/principio/publicaciones.jpg" max-width ="700px" OnClick="ImageButton4_Click"  /></div>    
                </div>
             </div>
         </div>

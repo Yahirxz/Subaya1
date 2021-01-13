@@ -9,6 +9,7 @@
     </div>
     <p>&nbsp<p/>
     <div class="slider">
+        <p></p>
     <ul>
         <li><img src="./Imagenes/principio/1.jpg"/></li>
         <li><img src="./Imagenes/principio/2.jpg"/></li>
@@ -18,26 +19,29 @@
     </div>
 
     <div class="row">
+        
+
         <div class="col-md-4">
+            
             <h2 class="lead" >  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp   &nbsp  Madera</h2>
            
 
             <p>
-                 <img src="./Imagenes/principio/madera.jpg" width ="250" height="300"/>
+                 <a href="Busqueda.aspx?Buscar=madera"><img src="./Imagenes/principio/madera.jpg" width ="250" height="300"/></a>
             </p>
           
         </div>
         <div class="col-md-4">
             <h2 class="lead" > &nbsp &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp  &nbsp &nbsp Tela</h2>
             <p>
-                 <img src="./Imagenes/principio/guaya.png" width ="250" height="300"/>
+                 <a href="Busqueda.aspx?Buscar=tela"><img src="./Imagenes/principio/guaya.png" width ="250" height="300"/></a>
             </p>
            
         </div>
         <div class="col-md-4">
             <h2 class="lead">  &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp   Metales</h2>
             <p>
-               <img src="./Imagenes/principio/metal.png" width ="250" height="300"/>
+               <a href="Busqueda.aspx?Buscar=metal"><img src="./Imagenes/principio/metal.png" width ="250" height="300"/></a>
             </p>
             
         </div>

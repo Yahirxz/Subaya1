@@ -10,7 +10,7 @@
     <asp:Label ID="Label1" runat="server" Text="Usuario"></asp:Label>
         <asp:TextBox ID="Usuario" runat="server"></asp:TextBox>
     <asp:Label ID="Label2" runat="server" Text="Contraseña"></asp:Label>
-        <asp:TextBox ID="Contra" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Contra" runat="server" TextMode="Password"></asp:TextBox>
         <asp:Button ID="entrar" runat="server" Text="Aceptar" OnClick="Entrar_Click"/>
         <asp:Button ID="Regisatarse" runat="server" Text="Registrarse" OnClick="Regisatarse_Click" />
     </div>

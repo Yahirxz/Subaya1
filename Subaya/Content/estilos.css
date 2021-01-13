@@ -477,6 +477,7 @@ body {
 
 .item-img {
     max-width: 100%;
+    max-height:90%;
     display: block;
 }
 
